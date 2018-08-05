@@ -1,0 +1,7 @@
+{
+  "name": "udemy-ionic2-course-favorite-quotes-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
