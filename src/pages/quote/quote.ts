@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, ViewController } from 'ionic-angular';
+import { IonicPage, ViewController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -8,7 +8,17 @@ import { IonicPage, ViewController } from 'ionic-angular';
 })
 export class QuotePage {
 
-  constructor(private viewController: ViewController) {}
+  person: string;
+  text: string;
+
+  constructor(
+    private viewController: ViewController,
+    private navParams: NavParams) { }
+
+  ionViewDidLoad() {
+    this.person = this.navParams.get('person');
+    this.text = this.navParams.get('text');
+  }
 
   onClose() {
     this.viewController.dismiss();
