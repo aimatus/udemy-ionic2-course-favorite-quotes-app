@@ -20,7 +20,7 @@ export class QuotePage {
     this.text = this.navParams.get('text');
   }
 
-  onClose() {
-    this.viewController.dismiss();
+  onClose(remove = false) {
+    this.viewController.dismiss(remove);
   }
 }
