@@ -1,5 +1,10 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons start menuToggle>
+      <button ion-button>
+        <ion-icon name="menu" outline></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>Favorite Quotes</ion-title>
   </ion-navbar>
 </ion-header>
@@ -12,8 +17,7 @@
         <p>{{ quote.text }}</p>
       </ion-item>
       <ion-item-options>
-        <button ion-button color="danger"
-          (click)="onRemoveFromFavorites(quote)">
+        <button ion-button color="danger" (click)="onRemoveFromFavorites(quote)">
           <ion-icon name="trash"></ion-icon>
           Delete
         </button>
