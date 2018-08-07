@@ -6,10 +6,22 @@
           <ion-icon name="menu" outline></ion-icon>
         </button>
       </ion-buttons>
-    <ion-title>settings</ion-title>
+    <ion-title>Settings</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label>Alterntive Background</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-toggle
+          (ionChange)="onToggle($event)"
+          [checked]="checkAltBackground()">
+        </ion-toggle>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
