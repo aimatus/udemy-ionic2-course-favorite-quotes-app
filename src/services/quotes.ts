@@ -1,4 +1,4 @@
-import { Quote } from "../data/quote.interface";
+import { Quote } from "../models/quote.model";
 
 export class QuotesService {
 

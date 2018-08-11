@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavParams, AlertController } from 'ionic-angular';
-import { Quote } from '../../data/quote.interface';
+import { Quote } from '../../models/quote.model';
 import { QuotesService } from '../../services/quotes';
 
 @IonicPage()
